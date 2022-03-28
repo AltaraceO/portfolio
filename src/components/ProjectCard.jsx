@@ -5,8 +5,12 @@ import sites from "../data";
 
 const useStyles = makeStyles({
   techs: {
+    backgroundColor: "#f3f2f2",
     fontSize: "8px",
     marginRight: "5px",
+    borderRadius: "25%",
+    paddingLeft: "2px",
+    paddingRight: "2px",
   },
   techBox: {
     width: "100%",
