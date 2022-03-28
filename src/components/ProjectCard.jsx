@@ -1,9 +1,23 @@
 import React from "react";
-import { Grid, Paper, Typography, Box } from "@material-ui/core";
+import { Grid, Paper, Typography, Box, makeStyles } from "@material-ui/core";
 import { Web } from "@mui/icons-material";
 import sites from "../data";
 
+const useStyles = makeStyles({
+  techs: {
+    fontSize: "8px",
+    marginRight: "5px",
+  },
+  techBox: {
+    width: "100%",
+    lineHeight: "8px",
+    display: "flex",
+    flexWrap: "wrap",
+  },
+});
+
 export const ProjectCard = () => {
+  const classes = useStyles();
   return (
     <>
       {sites.map((site, idx) => {
@@ -21,9 +35,14 @@ export const ProjectCard = () => {
                     Link
                   </Typography>
                 </Box>
-                <Box>
-                  {site.tech.map((item) => {
-                    return <div>{item}</div>;
+                <Box className={classes.techBox}>
+                  {/* {console.log(typeof site.tech)} */}
+                  {site.tech.map((item, idx) => {
+                    return (
+                      <Typography className={classes.techs} key={idx}>
+                        {item}
+                      </Typography>
+                    );
                   })}
                 </Box>
               </Box>

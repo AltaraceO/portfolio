@@ -104,6 +104,7 @@ const sites = [
     name: "Dice Game",
     url: "https://affectionate-fermat-047afc.netlify.app/",
     image: "/images/dice.png",
+    tech: ["JavaScript", "Netlify", "React", "Git", "GitHub", "HTML", "CSS"],
   },
   {
     name: "eCommerce Site",
