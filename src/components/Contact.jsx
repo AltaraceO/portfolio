@@ -1,5 +1,7 @@
 import { Card, Box, Typography } from "@material-ui/core";
 
+import { GitHub, LinkedIn } from "@mui/icons-material";
+
 export const Contact = () => {
   return (
     <Box display="inline-block" width={450}>
@@ -20,7 +22,14 @@ export const Contact = () => {
           <Typography>eMail</Typography>
           <Typography>orialtarace@gmail.com</Typography>
         </Box>
-        <Box>Social Media</Box>
+        <Box
+          display="flex"
+          justifyContent="flex-end"
+          sx={{ padding: "1.5rem" }}
+        >
+          <GitHub />
+          <LinkedIn />
+        </Box>
       </Card>
     </Box>
   );
