@@ -1,10 +1,10 @@
-import { Card, Box, Typography } from "@material-ui/core";
+import { Card, Box, Typography, Link } from "@material-ui/core";
 
 import { GitHub, LinkedIn } from "@mui/icons-material";
 
 export const Contact = () => {
   return (
-    <Box display="inline-block" width={450}>
+    <Box display="inline-block" margin="3rem" width={450}>
       <Card>
         <Box
           display="flex"
@@ -25,10 +25,18 @@ export const Contact = () => {
         <Box
           display="flex"
           justifyContent="flex-end"
+          gridGap="0.5rem"
           sx={{ padding: "1.5rem" }}
         >
-          <GitHub />
-          <LinkedIn />
+          <Link href="https://github.com/AltaraceO" target="_blank">
+            <GitHub />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/ori-a-3571a01a7/"
+            target="_blank"
+          >
+            <LinkedIn />
+          </Link>
         </Box>
       </Card>
     </Box>
