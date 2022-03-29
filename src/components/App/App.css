@@ -2,14 +2,13 @@
   object-fit: cover;
   /* object-position: 50% -20%; */
   width: 100%;
-  height: 5rem;
+  height: 7rem;
 }
 
 .card-link {
   display: flex;
   gap: 0.3rem;
   align-items: center;
-  color: red;
 }
 
 .container {

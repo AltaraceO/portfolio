@@ -2,6 +2,8 @@ const sites = [
   {
     name: "Books",
     url: "https://page--turner.herokuapp.com/",
+    site: "Heroku",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-final_project",
     image: "/images/books.png",
     tech: [
       "JavaScript",
@@ -25,6 +27,8 @@ const sites = [
   {
     name: "FBI API",
     url: "https://fbi-crime-api.netlify.app",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-fbi_api",
     image: "/images/fbi.jpg",
     tech: [
       "JavaScript",
@@ -43,30 +47,40 @@ const sites = [
   {
     name: "Minecraft",
     url: "https://happy-wing-768fcc.netlify.app",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-minecraft",
     image: "/images/minecraft.jpg",
     tech: ["JavaScript", "Netlify", "Git", "GitHub", "HTML", "CSS"],
   },
   {
     name: "Amazon Product Page",
     url: "https://admiring-keller-5dc5d7.netlify.app",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-amazon_page",
     image: "/images/amazon-item.jpg",
     tech: ["JavaScript", "Netlify", "Git", "GitHub", "HTML", "CSS"],
   },
   {
     name: "HTML & CSS Profile",
     url: "https://priceless-liskov-27ebf6.netlify.app",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-personal_profile",
     image: "/images/personal-profile.jpg",
     tech: ["HTML", "CSS", "Git", "GitHub", "Netlify"],
   },
   {
     name: "Apple Home Page",
     url: "https://peaceful-joliot-09629c.netlify.app/#",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-apple_main",
     image: "/images/apple-front-page.jpg",
     tech: ["HTML", "CSS", "Git", "GitHub", "Netlify"],
   },
   {
     name: "Cat CRUD",
     url: "https://determined-joliot-b24be6.netlify.app/",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-shoe_app",
     image: "/images/cat-crud.jpg",
     tech: [
       "JavaScript",
@@ -85,6 +99,8 @@ const sites = [
   {
     name: "Covid by Country",
     url: "https://reverent-hamilton-257a3a.netlify.app/",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-covid_by_country",
     image: "/images/covid.jpg",
     tech: [
       "JavaScript",
@@ -103,12 +119,16 @@ const sites = [
   {
     name: "Dice Game",
     url: "https://affectionate-fermat-047afc.netlify.app/",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-dice_game",
     image: "/images/dice.png",
     tech: ["JavaScript", "Netlify", "React", "Git", "GitHub", "HTML", "CSS"],
   },
   {
     name: "eCommerce Site",
     url: "https://suspicious-boyd-25985b.netlify.app/",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-ecommerce_site",
     image: "/images/e-comm.png",
     tech: [
       "JavaScript",
@@ -127,6 +147,8 @@ const sites = [
   {
     name: "Like / Unlike",
     url: "https://gifted-volhard-c380ea.netlify.app/",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-match_finding",
     image: "/images/like-unlike.png",
     tech: [
       "JavaScript",
@@ -144,6 +166,8 @@ const sites = [
   {
     name: "Memory Flash Cards",
     url: "https://adoring-volhard-05baca.netlify.app/",
+    site: "Netlify",
+    repo: "https://github.com/AltaraceO/fullstack_bootcamp-flash_cards",
     image: "/images/flash-cards.png",
     tech: [
       "JavaScript",
