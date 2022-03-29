@@ -21,3 +21,8 @@
 .git {
   padding-bottom: 0.5rem;
 }
+
+.tool-bar {
+  display: flex;
+  justify-content: space-between;
+}
