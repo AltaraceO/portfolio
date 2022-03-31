@@ -12,7 +12,7 @@ export const Contact = () => {
           sx={{ padding: "1.5rem" }}
         >
           <Typography>Phone Number</Typography>
-          <Typography>052-6787456</Typography>
+          <Link href="tel:+972-52-678-7457">052-678-7457</Link>
         </Box>
         <Box
           display="flex"
@@ -20,7 +20,7 @@ export const Contact = () => {
           sx={{ padding: "1.5rem" }}
         >
           <Typography>eMail</Typography>
-          <Typography>orialtarace@gmail.com</Typography>
+          <Link href="mailto:orialtarace@gmail.com">orialtarace@gmail.com</Link>
         </Box>
         <Box
           display="flex"
