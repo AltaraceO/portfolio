@@ -22,14 +22,8 @@ const useStyles = makeStyles((theme) => ({
   },
   buttons: {
     display: "block",
-    color: "#3cadb3",
-    // [theme.breakpoints.down("xs")]: {
-    //   marginTop: 0,
-    //   marginBottom: 0,
-    // },
   },
   buttonBox: {
-    color: "#3cadb3",
     display: "flex",
     marginRight: "2rem",
     [theme.breakpoints.down("xs")]: {
