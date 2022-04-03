@@ -68,7 +68,6 @@ const NavBar = () => {
       >
         <Box>
           <Typography
-            color="#195441"
             noWrap
             component="div"
             variant="h6"
