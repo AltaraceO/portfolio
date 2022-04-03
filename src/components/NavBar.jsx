@@ -31,7 +31,7 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" display="flex">
+    <AppBar position="fixed" display="flex">
       <Box
         sx={{
           display: "flex",

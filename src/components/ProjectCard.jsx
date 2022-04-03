@@ -10,7 +10,7 @@ export const ProjectCard = () => {
     <>
       {sites.map((site, idx) => {
         return (
-          <Grid key={idx} item xs={4}>
+          <Grid key={idx} item xs={10} sm={6} md={4}>
             <Paper className={classes.tr}>
               <img src={site.image} alt="page" className="card-image" />
               <Box paddingX={1}>

@@ -1,12 +1,36 @@
-import { Card, Box, Typography, Link, Divider } from "@material-ui/core";
+import { ClassNames } from "@emotion/react";
+import {
+  Card,
+  Box,
+  Typography,
+  Link,
+  Divider,
+  makeStyles,
+} from "@material-ui/core";
 
 import { GitHub, LinkedIn } from "@mui/icons-material";
 
+const useStyles = makeStyles((theme) => ({
+  mainBox: {
+    display: "inline-block",
+    width: 600,
+    margin: "3rem",
+
+    [theme.breakpoints.down("sm")]: {
+      width: 500,
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: 300,
+    },
+  },
+}));
+
 export const Contact = () => {
+  const classes = useStyles();
   return (
-    <Box display="inline-block" margin="3rem" width={450}>
+    <Box className={classes.mainBox}>
       <Card>
-        <Box sx={{ m: 2 }}>
+        <Box sx={{ m: "2rem" }}>
           <Typography variant="h4" component="h1">
             Get in touch!
           </Typography>
