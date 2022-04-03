@@ -12,7 +12,9 @@
 }
 
 .container {
-  margin-top: 6rem;
+  margin-top: 2rem !important;
+  padding: 0;
+  margin: 0;
 }
 
 .url {

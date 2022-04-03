@@ -1,4 +1,3 @@
-import { ClassNames } from "@emotion/react";
 import {
   Card,
   Box,
@@ -12,9 +11,9 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const useStyles = makeStyles((theme) => ({
   mainBox: {
-    display: "inline-block",
+    marginTop: "2rem",
+    margin: "auto",
     width: 600,
-    margin: "3rem",
 
     [theme.breakpoints.down("sm")]: {
       width: 500,
@@ -28,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 export const Contact = () => {
   const classes = useStyles();
   return (
-    <Box className={classes.mainBox}>
+    <div className={classes.mainBox}>
       <Card>
         <Box sx={{ m: "2rem" }}>
           <Typography variant="h4" component="h1">
@@ -71,6 +70,6 @@ export const Contact = () => {
           </Link>
         </Box>
       </Card>
-    </Box>
+    </div>
   );
 };

@@ -1,14 +1,46 @@
 import * as React from "react";
+import { makeStyles } from "@material-ui/core";
+import { alpha } from "@material-ui/core/styles/colorManipulator";
 import { useHistory } from "react-router-dom";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 const pages = ["About", "Projects", "CV", "Contact"];
 
+const useStyles = makeStyles((theme) => ({
+  nav: {
+    position: "sticky",
+    top: 0,
+    padding: "1rem",
+    backgroundColor: alpha("#ced0d3", 0.9),
+  },
+  mainBox: {
+    [theme.breakpoints.down("xs")]: {
+      flexDirection: "column",
+    },
+  },
+  buttons: {
+    display: "block",
+    color: "#3cadb3",
+    // [theme.breakpoints.down("xs")]: {
+    //   marginTop: 0,
+    //   marginBottom: 0,
+    // },
+  },
+  buttonBox: {
+    color: "#3cadb3",
+    display: "flex",
+    marginRight: "2rem",
+    [theme.breakpoints.down("xs")]: {
+      marginRight: "0.5rem",
+    },
+  },
+}));
+
 const NavBar = () => {
   const history = useHistory();
+  const classes = useStyles();
 
   const buttonLinks = (key) => {
     switch (key.page) {
@@ -31,8 +63,9 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="fixed" display="flex">
+    <div className={classes.nav}>
       <Box
+        className={classes.mainBox}
         sx={{
           display: "flex",
           alignItems: "center",
@@ -41,6 +74,7 @@ const NavBar = () => {
       >
         <Box>
           <Typography
+            color="#195441"
             noWrap
             component="div"
             variant="h6"
@@ -50,11 +84,11 @@ const NavBar = () => {
           </Typography>
         </Box>
 
-        <Box sx={{ display: "flex", marginRight: "2rem" }}>
+        <Box className={classes.buttonBox}>
           {pages.map((page) => (
             <Button
               key={page}
-              sx={{ my: 2, display: "block" }}
+              className={classes.buttons}
               onClick={() => buttonLinks({ page })}
             >
               {page}
@@ -62,7 +96,7 @@ const NavBar = () => {
           ))}
         </Box>
       </Box>
-    </AppBar>
+    </div>
   );
 };
 export default NavBar;

@@ -4,7 +4,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export const Cards = () => {
   return (
-    <Grid container spacing={5}>
+    <Grid container justify="center" spacing={5}>
       <ProjectCard />
     </Grid>
   );
