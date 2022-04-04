@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
   buttons: {
     display: "block",
+    color: "black",
   },
   buttonBox: {
     display: "flex",
@@ -68,6 +69,7 @@ const NavBar = () => {
       >
         <Box>
           <Typography
+            color="rgb(61, 61, 61)"
             noWrap
             component="div"
             variant="h6"

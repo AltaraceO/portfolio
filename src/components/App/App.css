@@ -28,3 +28,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+button {
+  color: rgb(61, 61, 61) !important;
+}
+
+.about-card {
+  line-height: 25px;
+  border-radius: 4px;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
