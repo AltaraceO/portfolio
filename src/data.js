@@ -1,6 +1,6 @@
 const sites = [
   {
-    name: "Books",
+    name: "Books - Final Project",
     url: "https://page--turner.herokuapp.com/",
     site: "Heroku",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-final_project",
@@ -25,7 +25,7 @@ const sites = [
     ],
   },
   {
-    name: "FBI API",
+    name: "FBI API - Mid Project",
     url: "https://fbi-crime-api.netlify.app",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-fbi_api",

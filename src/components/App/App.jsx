@@ -14,7 +14,6 @@ class App extends React.Component {
       <>
         <BrowserRouter>
           <NavBar />
-          {/* <Routes> */}
           <Container className="container">
             <Route exact path="/">
               <About />
@@ -29,7 +28,6 @@ class App extends React.Component {
               <Contact />
             </Route>
           </Container>
-          {/* </Routes> */}
         </BrowserRouter>
       </>
     );

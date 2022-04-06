@@ -10,6 +10,4 @@ export const About = () => {
       skills and creative approach to problem-solving.
     </div>
   );
-  //TODO add a link to the CONTACT at the end and write something like
-  //TODO "to get in touch..."
 };

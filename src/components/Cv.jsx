@@ -29,11 +29,7 @@ export const Cv = () => {
         </Link>
       </Box>
       <br />
-      {/* <object className={classes.pdfObject} type="application/pdf" data={CV}>
-        <p>pdf</p>
-      </object> */}
-      {/* <embed src={CV} type="application/pdf" />
-       */}
+
       <iframe
         className={classes.pdfObject}
         title="cv"
