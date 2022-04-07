@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem",
     backgroundColor: alpha("#ced0d3", 0.9),
     "& a.active": {
-      // color: "white !important",
       backgroundColor: alpha("#b3b6bb", 1),
       borderRadius: "3px",
     },
@@ -32,9 +31,6 @@ const useStyles = makeStyles((theme) => ({
   buttonBox: {
     display: "flex",
     marginRight: "2rem",
-    "&:a": {
-      borderColor: "red",
-    },
     [theme.breakpoints.down("xs")]: {
       marginRight: "0.5rem",
     },
