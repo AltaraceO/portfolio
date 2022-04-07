@@ -1,7 +1,7 @@
 import * as React from "react";
+import { Link } from "react-scroll";
 import { makeStyles } from "@material-ui/core";
 import { alpha } from "@material-ui/core/styles/colorManipulator";
-import { useHistory } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
@@ -14,6 +14,11 @@ const useStyles = makeStyles((theme) => ({
     top: 0,
     padding: "1rem",
     backgroundColor: alpha("#ced0d3", 0.9),
+    "& a.active": {
+      // color: "white !important",
+      backgroundColor: alpha("#b3b6bb", 1),
+      borderRadius: "3px",
+    },
   },
   mainBox: {
     [theme.breakpoints.down("xs")]: {
@@ -27,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
   buttonBox: {
     display: "flex",
     marginRight: "2rem",
+    "&:a": {
+      borderColor: "red",
+    },
     [theme.breakpoints.down("xs")]: {
       marginRight: "0.5rem",
     },
@@ -34,28 +42,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const NavBar = () => {
-  const history = useHistory();
   const classes = useStyles();
-
-  const buttonLinks = (key) => {
-    switch (key.page) {
-      case "About":
-        history.push("/");
-        break;
-      case "Projects":
-        history.push("/projects");
-        break;
-      case "CV":
-        history.push("/cv");
-        break;
-      case "Contact":
-        history.push("/contact");
-        break;
-
-      default:
-        break;
-    }
-  };
 
   return (
     <div className={classes.nav}>
@@ -68,26 +55,39 @@ const NavBar = () => {
         }}
       >
         <Box>
-          <Typography
-            color="rgb(61, 61, 61)"
-            noWrap
-            component="div"
-            variant="h6"
-            sx={{ paddingLeft: "1rem", mr: 2, display: { md: "flex" } }}
+          <Link
+            activeClass="active"
+            to="About"
+            spy={true}
+            smooth={500}
+            offset={-70}
+            duration={500}
           >
-            Ori Altarace
-          </Typography>
+            <Typography
+              color="rgb(61, 61, 61)"
+              noWrap
+              component="div"
+              variant="h6"
+              sx={{ paddingLeft: "1rem", mr: 2, display: { md: "flex" } }}
+            >
+              Ori Altarace
+            </Typography>
+          </Link>
         </Box>
 
         <Box className={classes.buttonBox}>
           {pages.map((page) => (
-            <Button
+            <Link
+              activeClass="active"
+              to={page}
+              spy={true}
+              smooth={500}
+              offset={-100}
+              duration={500}
               key={page}
-              className={classes.buttons}
-              onClick={() => buttonLinks({ page })}
             >
-              {page}
-            </Button>
+              <Button className={classes.buttons}>{page}</Button>
+            </Link>
           ))}
         </Box>
       </Box>

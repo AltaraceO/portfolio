@@ -2,7 +2,7 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div className="about-card">
+    <div className="about-card" id="About">
       My woodworking background and passion for building beautiful things lead
       me to fall in love with web programming. I find joy in planning, testing,
       and experimenting with new tools and technologies - I am currently seeking

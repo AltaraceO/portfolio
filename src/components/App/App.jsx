@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+// import { BrowserRouter, Route } from "react-router-dom";
+import { createTheme, ThemeProvider } from "@material-ui/core";
 import "./App.css";
 import { Container } from "@material-ui/core";
 import { Cards } from "../Cards";
@@ -9,26 +10,43 @@ import NavBar from "../NavBar";
 import { About } from "../About";
 
 class App extends React.Component {
+  theme = createTheme({
+    palette: {
+      primary: {
+        main: "#fff",
+      },
+    },
+    overrides: {
+      Button: {
+        label: {
+          color: "#f1f1f1",
+        },
+      },
+    },
+  });
+
   render() {
     return (
       <>
-        <BrowserRouter>
+        <ThemeProvider theme={this.theme}>
+          {/* <BrowserRouter> */}
           <NavBar />
           <Container className="container">
-            <Route exact path="/">
-              <About />
-            </Route>
-            <Route exact path="/projects">
-              <Cards />
-            </Route>
-            <Route exact path="/cv/">
-              <Cv />
-            </Route>
-            <Route exact path="/contact/">
-              <Contact />
-            </Route>
+            {/* <Route exact path="/"> */}
+            <About />
+            {/* </Route> */}
+            {/* <Route exact path="/projects"> */}
+            <Cards />
+            {/* </Route> */}
+            {/* <Route exact path="/cv/"> */}
+            <Cv />
+            {/* </Route> */}
+            {/* <Route exact path="/contact/"> */}
+            <Contact />
+            {/* </Route> */}
           </Container>
-        </BrowserRouter>
+          {/* </BrowserRouter> */}
+        </ThemeProvider>
       </>
     );
   }

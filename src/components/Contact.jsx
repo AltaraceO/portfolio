@@ -11,6 +11,7 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const useStyles = makeStyles((theme) => ({
   mainBox: {
+    height: "100vh",
     marginTop: "2rem",
     margin: "auto",
     width: 600,
@@ -27,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 export const Contact = () => {
   const classes = useStyles();
   return (
-    <div className={classes.mainBox}>
+    <div className={classes.mainBox} id="Contact">
       <Card>
         <Box sx={{ m: "2rem" }}>
           <Typography variant="h4" component="h1">

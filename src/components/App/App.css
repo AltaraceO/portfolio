@@ -29,11 +29,12 @@
   justify-content: space-between;
 }
 
-button {
+/* button {
   color: rgb(61, 61, 61) !important;
-}
+} */
 
 .about-card {
+  height: 100vh;
   line-height: 25px;
   border-radius: 4px;
   padding: 2rem;
