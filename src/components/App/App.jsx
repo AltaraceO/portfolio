@@ -8,6 +8,7 @@ import { Cv } from "../Cv";
 import { Contact } from "../Contact";
 import NavBar from "../NavBar";
 import { About } from "../About";
+import { Exercises } from "../Exercises";
 
 class App extends React.Component {
   theme = createTheme({
@@ -37,6 +38,7 @@ class App extends React.Component {
             {/* </Route> */}
             {/* <Route exact path="/projects"> */}
             <Cards />
+            <Exercises />
             {/* </Route> */}
             {/* <Route exact path="/cv/"> */}
             <Cv />

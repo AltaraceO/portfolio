@@ -1,6 +1,7 @@
 const sites = [
   {
     name: "Books - Final Project",
+    type: "project",
     url: "https://page--turner.herokuapp.com/",
     site: "Heroku",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-final_project",
@@ -26,6 +27,7 @@ const sites = [
   },
   {
     name: "FBI API - Mid Project",
+    type: "project",
     url: "https://fbi-crime-api.netlify.app",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-fbi_api",
@@ -46,6 +48,7 @@ const sites = [
   },
   {
     name: "Minecraft",
+    type: "exercise",
     url: "https://happy-wing-768fcc.netlify.app",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-minecraft",
@@ -54,6 +57,7 @@ const sites = [
   },
   {
     name: "Amazon Product Page",
+    type: "exercise",
     url: "https://admiring-keller-5dc5d7.netlify.app",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-amazon_page",
@@ -62,6 +66,7 @@ const sites = [
   },
   {
     name: "HTML & CSS Profile",
+    type: "exercise",
     url: "https://priceless-liskov-27ebf6.netlify.app",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-personal_profile",
@@ -70,6 +75,7 @@ const sites = [
   },
   {
     name: "Apple Home Page",
+    type: "exercise",
     url: "https://peaceful-joliot-09629c.netlify.app/#",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-apple_main",
@@ -78,6 +84,7 @@ const sites = [
   },
   {
     name: "Cat CRUD",
+    type: "exercise",
     url: "https://determined-joliot-b24be6.netlify.app/",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-shoe_app",
@@ -98,6 +105,7 @@ const sites = [
   },
   {
     name: "Covid by Country",
+    type: "exercise",
     url: "https://reverent-hamilton-257a3a.netlify.app/",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-covid_by_country",
@@ -118,6 +126,7 @@ const sites = [
   },
   {
     name: "Dice Game",
+    type: "exercise",
     url: "https://affectionate-fermat-047afc.netlify.app/",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-dice_game",
@@ -126,6 +135,7 @@ const sites = [
   },
   {
     name: "eCommerce Site",
+    type: "exercise",
     url: "https://suspicious-boyd-25985b.netlify.app/",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-ecommerce_site",
@@ -146,6 +156,7 @@ const sites = [
   },
   {
     name: "Like / Unlike",
+    type: "exercise",
     url: "https://gifted-volhard-c380ea.netlify.app/",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-match_finding",
@@ -165,6 +176,7 @@ const sites = [
   },
   {
     name: "Memory Flash Cards",
+    type: "exercise",
     url: "https://adoring-volhard-05baca.netlify.app/",
     site: "Netlify",
     repo: "https://github.com/AltaraceO/fullstack_bootcamp-flash_cards",

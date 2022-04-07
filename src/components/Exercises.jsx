@@ -1,15 +1,17 @@
 import React from "react";
+
 import { Grid, Paper, Typography, Box, Link, Divider } from "@material-ui/core";
 import useStyles from "./useSyles";
 import { GitHub, Web } from "@mui/icons-material";
 import sites from "../data";
 
-export const ProjectCard = () => {
-  const getProjects = sites.filter((site) => site.type === "project");
+export const Exercises = () => {
+  const getExercises = sites.filter((site) => site.type === "exercise");
+
   const classes = useStyles();
   return (
-    <>
-      {getProjects.map((site, idx) => {
+    <Grid id="Projects" container justifyContent="center" spacing={5}>
+      {getExercises.map((site, idx) => {
         return (
           <Grid key={idx} item xs={10} sm={6} md={4}>
             <Paper className={classes.tr}>
@@ -50,6 +52,6 @@ export const ProjectCard = () => {
           </Grid>
         );
       })}
-    </>
+    </Grid>
   );
 };
