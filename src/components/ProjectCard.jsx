@@ -11,9 +11,9 @@ export const ProjectCard = () => {
     <>
       {getProjects.map((site, idx) => {
         return (
-          <Grid key={idx} item xs={10} sm={6} md={4}>
-            <Paper className={classes.tr}>
-              <img src={site.image} alt="page" className="card-image" />
+          <Grid key={idx} item xs={10} sm={6} md={8}>
+            <Paper className={classes.trMain}>
+              <img src={site.image} alt="page" className="project-image" />
               <Box paddingX={1}>
                 <Typography
                   className={classes.title}

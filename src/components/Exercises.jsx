@@ -10,7 +10,13 @@ export const Exercises = () => {
 
   const classes = useStyles();
   return (
-    <Grid id="Projects" container justifyContent="center" spacing={5}>
+    <Grid
+      id="Exercises"
+      container
+      justifyContent="center"
+      // spacing={5}
+      className={classes.trContainer}
+    >
       {getExercises.map((site, idx) => {
         return (
           <Grid key={idx} item xs={10} sm={6} md={4}>

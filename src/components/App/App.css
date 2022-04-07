@@ -4,6 +4,16 @@
   width: 100%;
   height: 7rem;
 }
+.project-image {
+  object-fit: cover;
+  border-bottom: 2px solid lightgray;
+  width: 100%;
+  height: 14rem;
+}
+
+#Projects {
+  background-color: antiquewhite;
+}
 
 .card-link {
   display: flex;
@@ -12,9 +22,9 @@
 }
 
 .container {
-  margin-top: 2rem !important;
+  /* margin-top: 2rem !important;
   padding: 0;
-  margin: 0;
+  margin: 0; */
 }
 
 .url {
