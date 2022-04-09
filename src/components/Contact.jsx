@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Card,
   Box,
@@ -11,7 +11,9 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const useStyles = makeStyles((theme) => ({
   testClass: {
-    animation: `$fadeInRight 3000ms ${theme.transitions.easing.easeInOut}`,
+    animation: `$fadeInRight 1000ms ${theme.transitions.easing.easeInOut}`,
+    position: "absolute",
+    zIndex: "-10",
   },
   mainBox: {
     height: "100vh",
@@ -38,21 +40,36 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const Contact = () => {
-  const cont = document.querySelector("#Contact");
-
+  const [visible, setVisible] = useState(false);
   const classes = useStyles();
 
-  const check = (entry) => {
-    console.log(entry[0].target);
-    // entry[0].target.classList.toggle("is-active", entry.isIntersecting);
-  };
+  useEffect(() => {
+    const cont = document.querySelector("#Contact");
 
-  const Obs = new IntersectionObserver(check);
+    function check([entry]) {
+      console.log(entry.target);
+      if (entry.isIntersecting) {
+        setVisible(true);
+        console.log("add");
+      } else {
+        setVisible(false);
+        console.log("remove");
+      }
+    }
+    const Obs = new IntersectionObserver(check);
 
-  Obs.observe(cont);
+    Obs.observe(cont);
+  }, []);
+
   return (
-    <div className={classes.mainBox} id="Contact">
-      {console.log(cont.classList)}
+    <div
+      className={
+        visible
+          ? `${classes.mainBox} ${classes.testClass}`
+          : `${classes.mainBox}`
+      }
+      id="Contact"
+    >
       <Card>
         <Box sx={{ m: "2rem" }}>
           <Typography variant="h4" component="h1">
