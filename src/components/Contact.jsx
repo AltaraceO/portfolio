@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import {
   Card,
   Box,
@@ -6,10 +7,12 @@ import {
   Divider,
   makeStyles,
 } from "@material-ui/core";
-
 import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const useStyles = makeStyles((theme) => ({
+  testClass: {
+    animation: `$fadeInRight 3000ms ${theme.transitions.easing.easeInOut}`,
+  },
   mainBox: {
     height: "100vh",
     marginTop: "2rem",
@@ -23,12 +26,33 @@ const useStyles = makeStyles((theme) => ({
       width: 300,
     },
   },
+  "@keyframes fadeInRight": {
+    from: {
+      opacity: 0,
+      transform: "translateX(300px)",
+    },
+    to: {
+      opacity: 1,
+    },
+  },
 }));
 
 export const Contact = () => {
+  const cont = document.querySelector("#Contact");
+
   const classes = useStyles();
+
+  const check = (entry) => {
+    console.log(entry[0].target);
+    // entry[0].target.classList.toggle("is-active", entry.isIntersecting);
+  };
+
+  const Obs = new IntersectionObserver(check);
+
+  Obs.observe(cont);
   return (
     <div className={classes.mainBox} id="Contact">
+      {console.log(cont.classList)}
       <Card>
         <Box sx={{ m: "2rem" }}>
           <Typography variant="h4" component="h1">
