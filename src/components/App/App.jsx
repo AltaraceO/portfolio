@@ -1,7 +1,6 @@
 import React from "react";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import "./App.css";
-import { Container } from "@material-ui/core";
 import { Cards } from "../Cards";
 import { Cv } from "../Cv";
 import { Contact } from "../Contact";
