@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
   buttons: {
     display: "block",
-    color: "black",
+    color: "rgb(61, 61, 61)",
   },
   buttonBox: {
     display: "flex",
@@ -83,7 +83,9 @@ const NavBar = () => {
               duration={500}
               key={page}
             >
-              <Button className={classes.buttons}>{page}</Button>
+              <Button sx={{ color: "#fff" }} className={classes.buttons}>
+                {page}
+              </Button>
             </Link>
           ))}
         </Box>
