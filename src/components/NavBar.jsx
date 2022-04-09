@@ -55,7 +55,7 @@ const NavBar = () => {
             activeClass="active"
             to="About"
             spy={true}
-            smooth={500}
+            smooth={true}
             offset={-70}
             duration={500}
           >
@@ -77,7 +77,7 @@ const NavBar = () => {
               activeClass="active"
               to={page}
               spy={true}
-              smooth={500}
+              smooth={true}
               offset={-100}
               duration={500}
               key={page}
