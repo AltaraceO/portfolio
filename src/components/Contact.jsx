@@ -12,8 +12,9 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 const useStyles = makeStyles((theme) => ({
   testClass: {
     animation: `$fadeInRight 1000ms ${theme.transitions.easing.easeInOut}`,
-    position: "absolute",
-    zIndex: "-10",
+    // position: "absolute",
+    // zIndex: "-10",
+    // left: "25%",
   },
   mainBox: {
     height: "100vh",
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       width: 300,
+      // marginTop: "5px",
     },
   },
   "@keyframes fadeInRight": {
