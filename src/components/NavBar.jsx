@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
     position: "sticky",
     top: 0,
     padding: "1rem",
-    backgroundColor: alpha("#ced0d3", 0.9),
+    // backgroundColor: alpha("#ced0d3", 0.9),
+    backgroundColor: alpha("#5d5c61", 0.9),
     "& a.active": {
       backgroundColor: alpha("#b3b6bb", 1),
       borderRadius: "3px",

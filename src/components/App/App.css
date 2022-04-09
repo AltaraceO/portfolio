@@ -12,19 +12,16 @@
 }
 
 #Projects {
-  background-color: antiquewhite;
+  background-color: #a0bbc2;
+}
+#CV {
+  background-color: #a0bbc2;
 }
 
 .card-link {
   display: flex;
   gap: 0.3rem;
   align-items: center;
-}
-
-.container {
-  /* margin-top: 2rem !important;
-  padding: 0;
-  margin: 0; */
 }
 
 .url {
@@ -38,10 +35,6 @@
   display: flex;
   justify-content: space-between;
 }
-
-/* button {
-  color: rgb(61, 61, 61) !important;
-} */
 
 .about-card {
   height: 100vh;
