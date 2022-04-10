@@ -11,6 +11,11 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 600px) {
+  .about-card {
+    height: 100%;
+  }
+}
 .about-content {
   background-color: #c2a3a351;
   line-height: 25px;

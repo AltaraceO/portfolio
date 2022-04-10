@@ -10,6 +10,10 @@ const fileID = "14keq-Yr5EixpO1fHcLLgOZbQcEmeEP4cW8udbz5YMlY";
 const useStyles = makeStyles((theme) => ({
   cvPage: {
     height: "100vh",
+    [theme.breakpoints.down("xs")]: {
+      height: "100%",
+      paddingBottom: "2rem",
+    },
   },
   pdfObject: {
     display: "block",
