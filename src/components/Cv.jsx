@@ -10,6 +10,10 @@ const fileID = "14keq-Yr5EixpO1fHcLLgOZbQcEmeEP4cW8udbz5YMlY";
 const useStyles = makeStyles((theme) => ({
   cvPage: {
     height: "100vh",
+    [theme.breakpoints.down("sm")]: {
+      height: "100%",
+      paddingBottom: "2rem",
+    },
     [theme.breakpoints.down("xs")]: {
       height: "100%",
       paddingBottom: "2rem",
@@ -34,9 +38,14 @@ const useStyles = makeStyles((theme) => ({
     margin: "2rem",
     "&:hover": {
       cursor: "pointer",
-      backgroundColor: "white",
+      backgroundColor: "#fcebe9",
       textDecoration: "none",
     },
+  },
+  buttonContainer: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
 }));
 
@@ -44,10 +53,11 @@ export const Cv = () => {
   const classes = useStyles();
   return (
     <div className={classes.cvPage} id="CV">
-      <Link className={classes.dlButton} href={CV} download>
-        Download CV
-      </Link>
-
+      <div className={classes.buttonContainer}>
+        <Link className={classes.dlButton} href={CV} download>
+          Download CV
+        </Link>
+      </div>
       <br />
 
       <iframe

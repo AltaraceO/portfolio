@@ -13,10 +13,10 @@
 }
 
 #Projects {
-  background-color: #a0bbc2;
+  background-image: linear-gradient(#a0bbc2, #d4e0e3);
 }
 #CV {
-  background-color: #a0bbc2;
+  background-image: linear-gradient(#a0bbc2, #d4e0e3);
 }
 
 .card-link {

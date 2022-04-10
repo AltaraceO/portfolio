@@ -14,7 +14,7 @@ export const TechBox = ({ icon, name }) => {
         setVisible(false);
       }
     }
-    const Obs = new IntersectionObserver(check, { threshold: [1] });
+    const Obs = new IntersectionObserver(check, { threshold: [0.25] });
 
     Obs.observe(cont);
   }, []);

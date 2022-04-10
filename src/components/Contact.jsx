@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     animation: `$fadeInRight 700ms ${theme.transitions.easing.easeInOut}`,
   },
   mainBox: {
-    height: "100vh",
+    height: "70vh",
     marginTop: "8rem",
     margin: "auto",
     width: 600,
@@ -34,6 +34,10 @@ const useStyles = makeStyles((theme) => ({
     to: {
       opacity: 1,
     },
+  },
+  bottomDiv: {
+    backgroundColor: "#f9dedb",
+    height: "30vh",
   },
 }));
 
@@ -57,68 +61,73 @@ export const Contact = () => {
   }, []);
 
   return (
-    <div
-      className={
-        visible
-          ? `${classes.mainBox} ${classes.motionClass}`
-          : `${classes.mainBox}`
-      }
-      id="Contact"
-    >
-      <Card>
-        <Box sx={{ m: "2rem" }}>
-          <Typography variant="h4" component="h1">
-            Get in touch!
-          </Typography>
-        </Box>
-        <Divider light />
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          sx={{ padding: "1.5rem" }}
-        >
-          <Typography>Phone Number</Typography>
-          <Link href="tel:+972-52-678-7457">052-678-7457</Link>
-        </Box>
-        <Divider light />
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          sx={{ padding: "1.5rem" }}
-        >
-          <Typography>eMail</Typography>
-          <Link href="mailto:orialtarace@gmail.com">orialtarace@gmail.com</Link>
-        </Box>
-        <Divider light />
-        <Box
-          display="flex"
-          justifyContent="flex-end"
-          gridGap="0.5rem"
-          sx={{ padding: "1.5rem" }}
-        >
-          <Link
-            style={{ color: "#128C7E" }}
-            href="https://wa.me/972526787457"
-            target="_blank"
+    <div>
+      <div
+        className={
+          visible
+            ? `${classes.mainBox} ${classes.motionClass}`
+            : `${classes.mainBox}`
+        }
+        id="Contact"
+      >
+        <Card>
+          <Box sx={{ m: "2rem" }}>
+            <Typography variant="h4" component="h1">
+              Get in touch!
+            </Typography>
+          </Box>
+          <Divider light />
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            sx={{ padding: "1.5rem" }}
           >
-            <WhatsApp style={{ fontSize: "2.5rem" }} />
-          </Link>
-          <Link
-            style={{ color: "black" }}
-            href="https://github.com/AltaraceO"
-            target="_blank"
+            <Typography>Phone Number</Typography>
+            <Link href="tel:+972-52-678-7457">052-678-7457</Link>
+          </Box>
+          <Divider light />
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            sx={{ padding: "1.5rem" }}
           >
-            <GitHub style={{ fontSize: "2.5rem" }} />
-          </Link>
-          <Link
-            style={{ color: "#0270AD" }}
-            href="https://www.linkedin.com/in/ori-a-3571a01a7/"
-            target="_blank"
+            <Typography>eMail</Typography>
+            <Link href="mailto:orialtarace@gmail.com">
+              orialtarace@gmail.com
+            </Link>
+          </Box>
+          <Divider light />
+          <Box
+            display="flex"
+            justifyContent="flex-end"
+            gridGap="0.5rem"
+            sx={{ padding: "1.5rem" }}
           >
-            <LinkedIn style={{ fontSize: "2.5rem" }} />
-          </Link>
-        </Box>
-      </Card>
+            <Link
+              style={{ color: "#128C7E" }}
+              href="https://wa.me/972526787457"
+              target="_blank"
+            >
+              <WhatsApp style={{ fontSize: "2.5rem" }} />
+            </Link>
+            <Link
+              style={{ color: "black" }}
+              href="https://github.com/AltaraceO"
+              target="_blank"
+            >
+              <GitHub style={{ fontSize: "2.5rem" }} />
+            </Link>
+            <Link
+              style={{ color: "#0270AD" }}
+              href="https://www.linkedin.com/in/ori-a-3571a01a7/"
+              target="_blank"
+            >
+              <LinkedIn style={{ fontSize: "2.5rem" }} />
+            </Link>
+          </Box>
+        </Card>
+      </div>
+      <div className={classes.bottomDiv}></div>
     </div>
   );
 };
