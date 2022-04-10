@@ -1,4 +1,5 @@
 import React from "react";
+import { Tech } from "../Tech/Tech";
 import "./about.css";
 
 export const About = () => {
@@ -20,7 +21,9 @@ export const About = () => {
           </p>
         </div>
       </div>
-      <div className="about-tech">text</div>
+      <div className="about-tech">
+        <Tech />
+      </div>
     </div>
   );
 };

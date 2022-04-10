@@ -1,0 +1,8 @@
+.tech-container {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
