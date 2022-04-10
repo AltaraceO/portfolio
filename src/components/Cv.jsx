@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, Box } from "@material-ui/core";
-import { alpha } from "@material-ui/core/styles/colorManipulator";
+import { Link } from "@material-ui/core";
+
 import CV from "../Ori_Altarace_CV.pdf";
 
 import { makeStyles } from "@material-ui/core";

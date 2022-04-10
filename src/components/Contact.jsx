@@ -7,7 +7,7 @@ import {
   Divider,
   makeStyles,
 } from "@material-ui/core";
-import { GitHub, LinkedIn } from "@mui/icons-material";
+import { GitHub, LinkedIn, WhatsApp } from "@mui/icons-material";
 
 const useStyles = makeStyles((theme) => ({
   motionClass: {
@@ -96,14 +96,26 @@ export const Contact = () => {
           gridGap="0.5rem"
           sx={{ padding: "1.5rem" }}
         >
-          <Link href="https://github.com/AltaraceO" target="_blank">
-            <GitHub />
+          <Link
+            style={{ color: "#128C7E" }}
+            href="https://wa.me/972526787457"
+            target="_blank"
+          >
+            <WhatsApp style={{ fontSize: "2.5rem" }} />
           </Link>
           <Link
+            style={{ color: "black" }}
+            href="https://github.com/AltaraceO"
+            target="_blank"
+          >
+            <GitHub style={{ fontSize: "2.5rem" }} />
+          </Link>
+          <Link
+            style={{ color: "#0270AD" }}
             href="https://www.linkedin.com/in/ori-a-3571a01a7/"
             target="_blank"
           >
-            <LinkedIn />
+            <LinkedIn style={{ fontSize: "2.5rem" }} />
           </Link>
         </Box>
       </Card>

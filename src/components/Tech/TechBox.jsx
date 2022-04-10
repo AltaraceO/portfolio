@@ -10,9 +10,7 @@ export const TechBox = ({ icon, name }) => {
     function check([entry]) {
       if (entry.isIntersecting) {
         setVisible(true);
-        console.log("in");
       } else {
-        console.log("out");
         setVisible(false);
       }
     }
