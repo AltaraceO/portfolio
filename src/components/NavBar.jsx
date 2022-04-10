@@ -14,10 +14,10 @@ const useStyles = makeStyles((theme) => ({
     position: "sticky",
     top: 0,
     padding: "1rem",
-    // backgroundColor: alpha("#ced0d3", 0.9),
+    color: "#fff",
     backgroundColor: alpha("#5d5c61", 0.9),
     "& a.active": {
-      color: "red",
+      color: "#1c1c1e",
       backgroundColor: alpha("#b3b6bb", 1),
       borderRadius: "3px",
     },
@@ -29,8 +29,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   navButtons: {
-    color: "#fff",
+    padding: "0.5rem",
+    fontSize: "0.8rem",
     letterSpacing: 2,
+    cursor: "pointer",
     [theme.breakpoints.down("xs")]: {
       letterSpacing: 0,
     },
@@ -99,14 +101,7 @@ const NavBar = () => {
               duration={500}
               key={page}
             >
-              <button
-                sx={{
-                  color: "#FFF",
-                }}
-                className={classes.navButtons}
-              >
-                {page.toUpperCase()}
-              </button>
+              <div className={classes.navButtons}>{page.toUpperCase()}</div>
             </Link>
           ))}
         </Box>
