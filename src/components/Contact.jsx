@@ -11,7 +11,7 @@ import { GitHub, LinkedIn, WhatsApp } from "@mui/icons-material";
 
 const useStyles = makeStyles((theme) => ({
   motionClass: {
-    animation: `$fadeInRight 1000ms ${theme.transitions.easing.easeInOut}`,
+    animation: `$fadeInRight 700ms ${theme.transitions.easing.easeInOut}`,
   },
   mainBox: {
     height: "100vh",

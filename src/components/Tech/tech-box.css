@@ -9,7 +9,7 @@
   justify-content: space-around;
   align-items: center;
 
-  box-shadow: #88a5bf7a 6px 2px 10px 0px, #e5e1e1cc -6px -2px 10px 0px;
+  box-shadow: #88a5bf7a 6px 2px 10px 0px, #e5e1e1cc -2px -1px 5px 0px;
 }
 
 .tech-name {
@@ -21,13 +21,13 @@
 
 .motion {
   animation-name: fadeInBottom;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 @keyframes fadeInBottom {
   from {
     opacity: 0;
-    /* transform: translateY(300px); */
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
