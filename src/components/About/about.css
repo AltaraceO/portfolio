@@ -19,6 +19,7 @@
   justify-content: center;
 }
 .about-headers {
+  color: rgb(25, 23, 23);
   flex: 2;
   text-align: center;
 }

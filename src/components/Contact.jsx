@@ -10,7 +10,7 @@ import {
 import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const useStyles = makeStyles((theme) => ({
-  testClass: {
+  motionClass: {
     animation: `$fadeInRight 1000ms ${theme.transitions.easing.easeInOut}`,
   },
   mainBox: {
@@ -60,7 +60,7 @@ export const Contact = () => {
     <div
       className={
         visible
-          ? `${classes.mainBox} ${classes.testClass}`
+          ? `${classes.mainBox} ${classes.motionClass}`
           : `${classes.mainBox}`
       }
       id="Contact"
