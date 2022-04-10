@@ -5,6 +5,7 @@ import { alpha } from "@material-ui/core/styles/colorManipulator";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
 
 const pages = ["About", "Projects", "Exercises", "CV", "Contact"];
 
@@ -60,16 +61,25 @@ const NavBar = () => {
             offset={-70}
             duration={500}
           >
-            <Typography
-              // color="rgb(61, 61, 61)"
-              color="#fff"
-              noWrap
-              component="div"
-              variant="h6"
-              sx={{ paddingLeft: "1rem", mr: 2, display: { md: "flex" } }}
-            >
-              Ori Altarace
-            </Typography>
+            <Tooltip title="Back to top" placement="right-end">
+              <Typography
+                // color="rgb(61, 61, 61)"
+
+                color="#fff"
+                noWrap
+                component="div"
+                variant="h6"
+                sx={{
+                  cursor: "pointer",
+                  fontSize: "2rem",
+                  paddingLeft: "1rem",
+                  mr: 2,
+                  display: { md: "flex" },
+                }}
+              >
+                Ori Altarace
+              </Typography>
+            </Tooltip>
           </Link>
         </Box>
 
