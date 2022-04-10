@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   bottomDiv: {
-    backgroundColor: "#f9dedb",
+    backgroundColor: "#cbcacc",
     height: "30vh",
   },
 }));

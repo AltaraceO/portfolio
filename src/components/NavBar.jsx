@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     // backgroundColor: alpha("#ced0d3", 0.9),
     backgroundColor: alpha("#5d5c61", 0.9),
     "& a.active": {
+      color: "red",
       backgroundColor: alpha("#b3b6bb", 1),
       borderRadius: "3px",
     },
@@ -27,8 +28,12 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: "column",
     },
   },
-  buttons: {
-    display: "block",
+  navButtons: {
+    color: "#fff",
+    letterSpacing: 2,
+    [theme.breakpoints.down("xs")]: {
+      letterSpacing: 0,
+    },
   },
   buttonBox: {
     display: "flex",
@@ -77,7 +82,7 @@ const NavBar = () => {
                   display: { md: "flex" },
                 }}
               >
-                Ori Altarace
+                ORI ALTARACE
               </Typography>
             </Tooltip>
           </Link>
@@ -94,9 +99,14 @@ const NavBar = () => {
               duration={500}
               key={page}
             >
-              <Button sx={{ color: "#e85a4f" }} className={classes.buttons}>
-                {page}
-              </Button>
+              <button
+                sx={{
+                  color: "#FFF",
+                }}
+                className={classes.navButtons}
+              >
+                {page.toUpperCase()}
+              </button>
             </Link>
           ))}
         </Box>
