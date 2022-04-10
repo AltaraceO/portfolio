@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   mainBox: {
     height: "100vh",
-    marginTop: "2rem",
+    marginTop: "8rem",
     margin: "auto",
     width: 600,
 
