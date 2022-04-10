@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: alpha("#b3b6bb", 1),
       borderRadius: "3px",
     },
+    zIndex: "999",
   },
   mainBox: {
     [theme.breakpoints.down("xs")]: {

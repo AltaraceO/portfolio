@@ -36,11 +36,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-.about-card {
-  height: 100vh;
-  line-height: 25px;
-  border-radius: 4px;
-  padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}

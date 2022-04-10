@@ -5,7 +5,7 @@ import { Cards } from "../Cards";
 import { Cv } from "../Cv";
 import { Contact } from "../Contact";
 import NavBar from "../NavBar";
-import { About } from "../About";
+import { About } from "../About/About";
 import { Exercises } from "../Exercises";
 
 class App extends React.Component {
