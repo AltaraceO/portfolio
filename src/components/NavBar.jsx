@@ -71,7 +71,7 @@ const NavBar = () => {
               <Typography
                 // color="rgb(61, 61, 61)"
 
-                color="#d8c3a5"
+                color="#e2d3bd"
                 noWrap
                 component="div"
                 variant="h6"
