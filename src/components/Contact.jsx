@@ -8,6 +8,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import { GitHub, LinkedIn, WhatsApp } from "@mui/icons-material";
+import BG from "../assets/images/circuit-grey.jpg";
 
 const useStyles = makeStyles((theme) => ({
   motionClass: {
@@ -36,7 +37,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   bottomDiv: {
-    backgroundColor: "#cbcacc",
+    backgroundImage: `url(${BG})`,
+    opacity: 0.6,
     height: "30vh",
   },
 }));
