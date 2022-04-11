@@ -10,11 +10,6 @@ import { Exercises } from "../Exercises";
 
 class App extends React.Component {
   theme = createTheme({
-    // palette: {
-    //   primary: {
-    //     main: "#000000",
-    //   },
-    // },
     overrides: {
       Button: {
         label: {
