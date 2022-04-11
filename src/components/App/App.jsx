@@ -29,13 +29,11 @@ class App extends React.Component {
       <>
         <ThemeProvider theme={this.theme}>
           <NavBar />
-          {/* <Container className="container"> */}
           <About />
           <Cards />
           <Exercises />
           <Cv />
           <Contact />
-          {/* </Container> */}
         </ThemeProvider>
       </>
     );
