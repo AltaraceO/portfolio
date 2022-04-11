@@ -69,8 +69,7 @@ const NavBar = () => {
           >
             <Tooltip title="Back to top" placement="right-end">
               <Typography
-                // color="rgb(61, 61, 61)"
-
+                data-header="my-name"
                 color="#e2d3bd"
                 noWrap
                 component="div"
@@ -92,6 +91,7 @@ const NavBar = () => {
         <Box className={classes.buttonBox}>
           {pages.map((page) => (
             <Link
+              data-test={page}
               activeClass="active"
               to={page}
               spy={true}
