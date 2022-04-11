@@ -1,6 +1,6 @@
 const sites = [
   {
-    name: "Books - Final Project",
+    name: "BOOK GENRES - FINAL PROJECT",
     type: "project",
     url: "https://page--turner.herokuapp.com/",
     site: "Heroku",
@@ -26,7 +26,7 @@ const sites = [
     ],
   },
   {
-    name: "FBI API - Mid Project",
+    name: "FBI API - MID PROJECT",
     type: "project",
     url: "https://fbi-crime-api.netlify.app",
     site: "Netlify",
@@ -47,7 +47,7 @@ const sites = [
     ],
   },
   {
-    name: "Minecraft",
+    name: "MINECRAFT",
     type: "exercise",
     url: "https://happy-wing-768fcc.netlify.app",
     site: "Netlify",
@@ -56,7 +56,7 @@ const sites = [
     tech: ["JavaScript", "Netlify", "Git", "GitHub", "HTML", "CSS"],
   },
   {
-    name: "Amazon Product Page",
+    name: "AMAZON PRODUCT PAGE",
     type: "exercise",
     url: "https://admiring-keller-5dc5d7.netlify.app",
     site: "Netlify",
@@ -65,7 +65,7 @@ const sites = [
     tech: ["JavaScript", "Netlify", "Git", "GitHub", "HTML", "CSS"],
   },
   {
-    name: "HTML & CSS Profile",
+    name: "HTML & CSS PROFILE",
     type: "exercise",
     url: "https://priceless-liskov-27ebf6.netlify.app",
     site: "Netlify",
@@ -74,7 +74,7 @@ const sites = [
     tech: ["HTML", "CSS", "Git", "GitHub", "Netlify"],
   },
   {
-    name: "Apple Home Page",
+    name: "APPLE HOME PAGE",
     type: "exercise",
     url: "https://peaceful-joliot-09629c.netlify.app/#",
     site: "Netlify",
@@ -83,7 +83,7 @@ const sites = [
     tech: ["HTML", "CSS", "Git", "GitHub", "Netlify"],
   },
   {
-    name: "Cat CRUD",
+    name: "CAT CRUD",
     type: "exercise",
     url: "https://determined-joliot-b24be6.netlify.app/",
     site: "Netlify",
@@ -104,7 +104,7 @@ const sites = [
     ],
   },
   {
-    name: "Covid by Country",
+    name: "COVID BY COUNTRY",
     type: "exercise",
     url: "https://reverent-hamilton-257a3a.netlify.app/",
     site: "Netlify",
@@ -125,7 +125,7 @@ const sites = [
     ],
   },
   {
-    name: "Dice Game",
+    name: "DICE GAME",
     type: "exercise",
     url: "https://affectionate-fermat-047afc.netlify.app/",
     site: "Netlify",
@@ -134,7 +134,7 @@ const sites = [
     tech: ["JavaScript", "Netlify", "React", "Git", "GitHub", "HTML", "CSS"],
   },
   {
-    name: "eCommerce Site",
+    name: "eCOMMERCE SITE",
     type: "exercise",
     url: "https://suspicious-boyd-25985b.netlify.app/",
     site: "Netlify",
@@ -155,7 +155,7 @@ const sites = [
     ],
   },
   {
-    name: "Like / Unlike",
+    name: "LIKE / UNLIKE",
     type: "exercise",
     url: "https://gifted-volhard-c380ea.netlify.app/",
     site: "Netlify",
@@ -175,7 +175,7 @@ const sites = [
     ],
   },
   {
-    name: "Memory Flash Cards",
+    name: "MEMORY FLASH CARDS",
     type: "exercise",
     url: "https://adoring-volhard-05baca.netlify.app/",
     site: "Netlify",

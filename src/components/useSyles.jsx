@@ -5,9 +5,9 @@ const useStyles = makeStyles({
     backgroundColor: "#f3f2f2",
     fontSize: "8px",
     marginRight: "5px",
-    borderRadius: "25%",
-    paddingLeft: "2px",
-    paddingRight: "2px",
+    borderRadius: "15%",
+    paddingLeft: "4px",
+    paddingRight: "4px",
   },
   techBox: {
     width: "100%",
