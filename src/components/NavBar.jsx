@@ -4,7 +4,6 @@ import { makeStyles } from "@material-ui/core";
 import { alpha } from "@material-ui/core/styles/colorManipulator";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 
 const pages = ["About", "Projects", "Exercises", "CV", "Contact"];
