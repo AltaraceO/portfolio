@@ -67,7 +67,7 @@ export const Exercises = () => {
                       target="_blank"
                     >
                       <GitHub sx={{ marginRight: "3px", width: 16 }} />
-                      <Typography> REPO</Typography>
+                      <Typography> REPOSITORY</Typography>
                     </Link>
                   </Box>
                   <Divider light />
