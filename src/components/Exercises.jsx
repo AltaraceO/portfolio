@@ -52,7 +52,6 @@ export const Exercises = () => {
                       className={classes.itemLink}
                       href={site.url}
                       target="_blank"
-                      variant="div"
                     >
                       <Web
                         sx={{
@@ -66,7 +65,6 @@ export const Exercises = () => {
                       className={classes.itemLink}
                       href={site.repo}
                       target="_blank"
-                      variant="div"
                     >
                       <GitHub sx={{ marginRight: "3px", width: 16 }} />
                       <Typography> REPO</Typography>
