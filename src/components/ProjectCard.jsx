@@ -17,22 +17,45 @@ export const ProjectCard = () => {
               <Box paddingX={1}>
                 <Typography
                   className={classes.title}
-                  variant="subtitle1"
+                  variant="h6"
                   component="h2"
                 >
                   {site.name}
                 </Typography>
                 <Divider light />
-                <Box className="card-link url">
+                {/* <Box className="card-link url">
                   <Web sx={{ width: 13 }} />
                   <Link href={site.url} target="_blank" variant="body2">
                     Checkout the site on {site.site}
                   </Link>
-                </Box>
-                <Box className="card-link git">
+                </Box> */}
+                {/* <Box className="card-link git">
                   <GitHub sx={{ width: 13 }} />
                   <Link href={site.repo} target="_blank" variant="body2">
                     Repository
+                  </Link> */}
+                {/* </Box> */}
+                <Box className={classes.linkContainer}>
+                  <Link
+                    className={classes.itemLink}
+                    href={site.url}
+                    target="_blank"
+                  >
+                    <Web
+                      sx={{
+                        marginRight: "3px",
+                        width: 14,
+                      }}
+                    />
+                    <Typography> {site.site.toUpperCase()}</Typography>
+                  </Link>
+                  <Link
+                    className={classes.itemLink}
+                    href={site.repo}
+                    target="_blank"
+                  >
+                    <GitHub sx={{ marginRight: "3px", width: 14 }} />
+                    <Typography> REPOSITORY</Typography>
                   </Link>
                 </Box>
                 <Divider light />
