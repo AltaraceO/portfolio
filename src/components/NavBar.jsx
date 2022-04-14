@@ -75,6 +75,7 @@ const NavBar = () => {
                 component="div"
                 variant="h6"
                 sx={{
+                  letterSpacing: 2,
                   cursor: "pointer",
                   fontSize: "2rem",
                   paddingLeft: "1rem",

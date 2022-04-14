@@ -39,14 +39,17 @@ const useStyles = makeStyles({
     },
   },
   title: {
+    letterSpacing: 2,
     paddingBottom: "0.5rem",
+    paddingTop: "0.5rem",
     fontWeight: 500,
   },
 
   linkContainer: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-around",
+    justifyContent: "flex-start",
+    gap: "10px",
     marginTop: "1rem",
     marginBottom: "1rem",
   },

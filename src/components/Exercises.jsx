@@ -16,7 +16,7 @@ import sites from "../data";
 
 const THEME = createTheme({
   typography: {
-    fontSize: 12,
+    fontSize: 10,
   },
 });
 
@@ -41,7 +41,7 @@ export const Exercises = () => {
                 <Box paddingX={1}>
                   <Typography
                     className={classes.title}
-                    variant="subtitle1"
+                    variant="h6"
                     component="h2"
                   >
                     {site.name}
@@ -56,7 +56,7 @@ export const Exercises = () => {
                       <Web
                         sx={{
                           marginRight: "3px",
-                          width: 16,
+                          width: 14,
                         }}
                       />
                       <Typography> {site.site.toUpperCase()}</Typography>
@@ -66,7 +66,7 @@ export const Exercises = () => {
                       href={site.repo}
                       target="_blank"
                     >
-                      <GitHub sx={{ marginRight: "3px", width: 16 }} />
+                      <GitHub sx={{ marginRight: "3px", width: 14 }} />
                       <Typography> REPOSITORY</Typography>
                     </Link>
                   </Box>
