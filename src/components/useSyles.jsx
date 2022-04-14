@@ -42,6 +42,34 @@ const useStyles = makeStyles({
     paddingBottom: "0.5rem",
     fontWeight: 500,
   },
+
+  linkContainer: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-around",
+    marginTop: "1rem",
+    marginBottom: "1rem",
+  },
+
+  itemLink: {
+    color: "#3e3e41",
+    border: "1px solid #B3B6BB",
+    display: "flex",
+    borderRadius: "5px",
+    textAlign: "center",
+    alignItems: "center",
+    justifyContent: "space-around",
+    padding: "0.3rem",
+    paddingRight: "6px",
+    boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px;",
+
+    "&:hover": {
+      backgroundColor: "#B3B6BB",
+      color: "#fff",
+      border: "1px solid #6D6C6F",
+      textDecoration: "none",
+    },
+  },
 });
 
 export default useStyles;
