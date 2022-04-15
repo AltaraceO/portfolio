@@ -26,10 +26,18 @@
   }
 }
 .about-main-container {
-  max-width: 900px;
+  width: 100%;
+}
+.about-centered {
+  width: 100%;
+  background-color: #c2c2c4a1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .about-content {
-  background-color: #c2c2c4a1;
+  max-width: 900px;
   line-height: 25px;
   padding: 2rem;
   display: flex;

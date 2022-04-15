@@ -70,7 +70,7 @@ const NavBar = () => {
             <Tooltip title="Back to top" placement="right-end">
               <Typography
                 data-header="my-name"
-                color="#e2d3bd"
+                color="#f2ebe0"
                 noWrap
                 component="div"
                 variant="h6"
