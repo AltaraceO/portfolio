@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     animation: `$fadeInRight 700ms ${theme.transitions.easing.easeInOut}`,
   },
   mainBox: {
-    height: "70vh",
-    marginTop: "8rem",
+    height: "50vh",
+    marginTop: "25%",
     margin: "auto",
     width: 600,
 
@@ -74,9 +74,7 @@ export const Contact = () => {
       >
         <Card>
           <Box sx={{ m: "2rem" }}>
-            <Typography variant="h4" component="h1">
-              Get in touch!
-            </Typography>
+            <Typography variant="h4">GET IN TOUCH</Typography>
           </Box>
           <Divider light />
           <Box
