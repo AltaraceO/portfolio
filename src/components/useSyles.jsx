@@ -19,10 +19,11 @@ const useStyles = makeStyles({
   trMain: {
     maxWidth: "900px",
     margin: "4rem auto",
-    boxShadow:
-      "rgba(0, 0, 0, 0.25) 0px 20px 25px, rgba(0, 0, 0, 0.12) 0px -9px 20px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 9px 10px, rgba(0, 0, 0, 0.09) 0px -3px 5px;",
+
+    boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px;",
     "&:hover": {
-      boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px;",
+      boxShadow:
+        "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
     },
   },
   trContainer: {
@@ -32,10 +33,10 @@ const useStyles = makeStyles({
   tr: {
     margin: "4rem 1.5rem",
 
-    boxShadow:
-      "rgba(0, 0, 0, 0.25) 0px 20px 25px, rgba(0, 0, 0, 0.12) 0px -9px 20px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 9px 10px, rgba(0, 0, 0, 0.09) 0px -3px 5px;",
+    boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px;",
     "&:hover": {
-      boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px;",
+      boxShadow:
+        "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
     },
   },
   title: {
