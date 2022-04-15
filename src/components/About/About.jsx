@@ -25,7 +25,9 @@ export const About = () => {
           </div>
         </div>
         <div className="about-tech">
-          <Tech />
+          <div className="centered-tech">
+            <Tech />
+          </div>
         </div>
       </div>
     </div>

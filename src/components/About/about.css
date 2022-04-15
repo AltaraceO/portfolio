@@ -77,3 +77,6 @@
   align-items: center;
   justify-content: center;
 }
+.centered-tech {
+  max-width: 1000px;
+}
