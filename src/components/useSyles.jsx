@@ -68,8 +68,8 @@ const useStyles = makeStyles({
     boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px;",
 
     "&:hover": {
-      backgroundColor: "#B3B6BB",
-      color: "#fff",
+      backgroundColor: "#f2f2f3",
+      color: "#3e3e41",
       border: "1px solid #6D6C6F",
       textDecoration: "none",
     },
