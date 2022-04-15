@@ -9,7 +9,7 @@ export const About = () => {
         <div className="about-centered">
           <div className="about-content">
             <div className="about-headers">
-              <h1>Full-Stack Web Developer</h1>
+              <h2>FULL-STACK WEB DEVELOPER</h2>
               <h2>Ori Altarace</h2>
             </div>
             <div className="about-text">

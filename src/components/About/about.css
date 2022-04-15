@@ -9,7 +9,7 @@
 
 .about-card::before {
   content: "";
-  background-image: url("../../assets/images/circuit-grey.jpg");
+  background-image: url("../../assets/images/paper.jpg");
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
@@ -18,7 +18,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.32;
+  opacity: 0.3;
 }
 @media (max-width: 900px) {
   .about-card {
