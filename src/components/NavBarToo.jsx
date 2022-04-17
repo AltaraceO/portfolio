@@ -5,6 +5,7 @@ import {
   Container,
   Toolbar,
   Avatar,
+  Typography,
   Hidden,
   IconButton,
   SwipeableDrawer,
@@ -44,7 +45,26 @@ export const NavBarToo = () => {
     <AppBar position="sticky" color="default">
       <Container maxWidth="md">
         <Toolbar disableGutters>
-          <Avatar className={classes.avatar}>ORI ALTARACE</Avatar>
+          {/* <Avatar className={classes.avatar}>ORI ALTARACE</Avatar> */}
+          <Typography
+            data-header="my-name"
+            color="#f2ebe0"
+            className={classes.avatar}
+            noWrap
+            component="div"
+            variant="h6"
+            sx={{
+              letterSpacing: 2,
+              cursor: "pointer",
+              fontSize: "2rem",
+              //   paddingLeft: "1rem",
+              marginRight: "auto",
+              //   mr: 2,
+              //   display: { md: "flex" },
+            }}
+          >
+            ORI ALTARACE
+          </Typography>
           <Hidden xsDown>
             {navigationLinks.map((item) => (
               <Link
