@@ -4,7 +4,7 @@ import {
   AppBar,
   Container,
   Toolbar,
-  Avatar,
+  //   Avatar,
   Tooltip,
   Typography,
   Hidden,
@@ -18,7 +18,6 @@ import { alpha } from "@material-ui/core/styles/colorManipulator";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Link } from "react-scroll";
-import { FaGlasses } from "react-icons/fa";
 
 const navigationLinks = ["About", "Projects", "Exercises", "CV", "Contact"];
 
@@ -55,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const NavBarToo = () => {
   const classes = useStyles();
-  const [open, setOpen] = useState(FaGlasses);
+  const [open, setOpen] = useState("");
   return (
     <AppBar position="sticky" color="default">
       <Container className={classes.nav}>
