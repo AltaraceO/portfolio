@@ -43,8 +43,10 @@ const useStyles = makeStyles((theme) => ({
       letterSpacing: 0,
     },
   },
-  avatar: {
+  title: {
     marginRight: "auto",
+  },
+  titleText: {
     letterSpacing: 2,
     cursor: "pointer",
     // color: "#f2ebe0",
@@ -56,27 +58,29 @@ export const NavBarToo = () => {
   const [open, setOpen] = useState(FaGlasses);
   return (
     <AppBar position="sticky" color="default">
-      <Container
-        className={classes.nav}
-        //   maxWidth="md"
-      >
+      <Container className={classes.nav}>
         <Toolbar disableGutters>
-          {/* <Avatar className={classes.avatar}>ORI ALTARACE</Avatar> */}
-          <Tooltip title="Back to top" placement="right-end">
-            <Typography
-              data-header="my-name"
-              className={classes.avatar}
-              noWrap
-              component="div"
-              variant="h6"
-              sx={{
-                fontSize: "2rem",
-                marginRight: "auto",
-              }}
-            >
-              ORI ALTARACE
-            </Typography>
-          </Tooltip>
+          <Link
+            className={classes.title}
+            activeClass="false"
+            to="About"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <Tooltip title="Back to top" placement="right-end">
+              <Typography
+                data-header="my-name"
+                noWrap
+                component="div"
+                variant="h6"
+                className={classes.titleText}
+              >
+                ORI ALTARACE
+              </Typography>
+            </Tooltip>
+          </Link>
           <Hidden xsDown>
             {navigationLinks.map((item) => (
               <Link
