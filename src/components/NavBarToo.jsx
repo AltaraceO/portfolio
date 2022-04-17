@@ -5,6 +5,7 @@ import {
   Container,
   Toolbar,
   Avatar,
+  Tooltip,
   Typography,
   Hidden,
   IconButton,
@@ -13,6 +14,7 @@ import {
   List,
   ListItem,
 } from "@material-ui/core";
+import { alpha } from "@material-ui/core/styles/colorManipulator";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Link } from "react-scroll";
@@ -23,6 +25,14 @@ const navigationLinks = ["About", "Projects", "Exercises", "CV", "Contact"];
 const useStyles = makeStyles((theme) => ({
   link: {
     marginRight: 20,
+  },
+  nav: {
+    "& a.active": {
+      color: "#1c1c1e",
+      backgroundColor: alpha("#b3b6bb", 1),
+      borderRadius: "3px",
+    },
+    // zIndex: "999",
   },
   navButtons: {
     padding: "0.5rem",
@@ -35,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     marginRight: "auto",
+    letterSpacing: 2,
+    cursor: "pointer",
+    // color: "#f2ebe0",
   },
 }));
 
@@ -43,28 +56,27 @@ export const NavBarToo = () => {
   const [open, setOpen] = useState(FaGlasses);
   return (
     <AppBar position="sticky" color="default">
-      <Container maxWidth="md">
+      <Container
+        className={classes.nav}
+        //   maxWidth="md"
+      >
         <Toolbar disableGutters>
           {/* <Avatar className={classes.avatar}>ORI ALTARACE</Avatar> */}
-          <Typography
-            data-header="my-name"
-            color="#f2ebe0"
-            className={classes.avatar}
-            noWrap
-            component="div"
-            variant="h6"
-            sx={{
-              letterSpacing: 2,
-              cursor: "pointer",
-              fontSize: "2rem",
-              //   paddingLeft: "1rem",
-              marginRight: "auto",
-              //   mr: 2,
-              //   display: { md: "flex" },
-            }}
-          >
-            ORI ALTARACE
-          </Typography>
+          <Tooltip title="Back to top" placement="right-end">
+            <Typography
+              data-header="my-name"
+              className={classes.avatar}
+              noWrap
+              component="div"
+              variant="h6"
+              sx={{
+                fontSize: "2rem",
+                marginRight: "auto",
+              }}
+            >
+              ORI ALTARACE
+            </Typography>
+          </Tooltip>
           <Hidden xsDown>
             {navigationLinks.map((item) => (
               <Link
@@ -93,6 +105,7 @@ export const NavBarToo = () => {
         </Toolbar>
       </Container>
       <SwipeableDrawer
+        className={classes.nav}
         anchor="right"
         open={open}
         onOpen={() => {
