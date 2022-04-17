@@ -5,6 +5,7 @@ import { Cards } from "../Cards";
 import { Cv } from "../Cv";
 import { Contact } from "../Contact";
 import NavBar from "../NavBar";
+import { NavBarToo } from "../NavBarToo";
 import { About } from "../About/About";
 import { Exercises } from "../Exercises";
 
@@ -23,7 +24,8 @@ class App extends React.Component {
     return (
       <>
         <ThemeProvider theme={this.theme}>
-          <NavBar />
+          {/* <NavBar /> */}
+          <NavBarToo />
           <About />
           <Cards />
           <Exercises />
