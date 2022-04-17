@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   makeStyles,
   AppBar,
@@ -9,10 +9,13 @@ import {
   IconButton,
   SwipeableDrawer,
   Divider,
+  List,
+  ListItem,
 } from "@material-ui/core";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Link } from "react-scroll";
+import { FaGlasses } from "react-icons/fa";
 
 const navigationLinks = ["About", "Projects", "Exercises", "CV", "Contact"];
 
@@ -36,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const NavBarToo = () => {
   const classes = useStyles();
+  const [open, setOpen] = useState(FaGlasses);
   return (
     <AppBar position="sticky" color="default">
       <Container maxWidth="md">
@@ -59,30 +63,53 @@ export const NavBarToo = () => {
           </Hidden>
           <Hidden smUp>
             <IconButton>
-              <MenuIcon />
+              <MenuIcon
+                onClick={() => {
+                  setOpen(true);
+                }}
+              />
             </IconButton>
           </Hidden>
         </Toolbar>
       </Container>
-      <SwipeableDrawer anchor="right" open={true}>
-        <IconButton>
-          <ChevronRightIcon />
-        </IconButton>
+      <SwipeableDrawer
+        anchor="right"
+        open={open}
+        onOpen={() => {
+          setOpen(true);
+        }}
+        onClose={() => {
+          setOpen(false);
+        }}
+      >
+        <div>
+          <IconButton>
+            <ChevronRightIcon
+              onClick={() => {
+                setOpen(false);
+              }}
+            />
+          </IconButton>
+        </div>
         <Divider />
-        {navigationLinks.map((item) => (
-          <Link
-            data-test={item}
-            activeClass="active"
-            to={item}
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            key={item}
-          >
-            <div className={classes.navButtons}>{item.toUpperCase()}</div>
-          </Link>
-        ))}
+        <List>
+          {navigationLinks.map((item) => (
+            <ListItem>
+              <Link
+                data-test={item}
+                activeClass="active"
+                to={item}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                key={item}
+              >
+                <div className={classes.navButtons}>{item.toUpperCase()}</div>
+              </Link>
+            </ListItem>
+          ))}
+        </List>
       </SwipeableDrawer>
     </AppBar>
   );
