@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const NavBar = () => {
   const classes = useStyles();
-  const [open, setOpen] = useState("");
+  const [open, setOpen] = useState(false);
   return (
     <AppBar position="sticky" color="default">
       <Container className={classes.nav}>
@@ -129,7 +129,7 @@ export const NavBar = () => {
         <Divider />
         <List>
           {navigationLinks.map((item) => (
-            <ListItem>
+            <ListItem key="unique">
               <Link
                 data-test={item}
                 activeClass="active"
