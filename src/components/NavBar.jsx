@@ -1,30 +1,35 @@
-import * as React from "react";
-import { Link } from "react-scroll";
-import { makeStyles } from "@material-ui/core";
+import React, { useState } from "react";
+import {
+  makeStyles,
+  AppBar,
+  Container,
+  Toolbar,
+  Tooltip,
+  Typography,
+  Hidden,
+  IconButton,
+  SwipeableDrawer,
+  Divider,
+  List,
+  ListItem,
+} from "@material-ui/core";
 import { alpha } from "@material-ui/core/styles/colorManipulator";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Tooltip from "@mui/material/Tooltip";
+import MenuIcon from "@mui/icons-material/Menu";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import { Link } from "react-scroll";
 
-const pages = ["About", "Projects", "Exercises", "CV", "Contact"];
+const navigationLinks = ["About", "Projects", "Exercises", "CV", "Contact"];
 
 const useStyles = makeStyles((theme) => ({
+  link: {
+    marginRight: 20,
+  },
   nav: {
-    position: "sticky",
-    top: 0,
-    padding: "1rem",
-    color: "#fff",
-    backgroundColor: alpha("#5d5c61", 0.9),
     "& a.active": {
-      color: "#1c1c1e",
+      // color: "#1c1c1e",
+      color: "#fff",
       backgroundColor: alpha("#b3b6bb", 1),
       borderRadius: "3px",
-    },
-    zIndex: "999",
-  },
-  mainBox: {
-    [theme.breakpoints.down("xs")]: {
-      flexDirection: "column",
     },
   },
   navButtons: {
@@ -36,31 +41,26 @@ const useStyles = makeStyles((theme) => ({
       letterSpacing: 0,
     },
   },
-  buttonBox: {
-    display: "flex",
-    marginRight: "2rem",
-    [theme.breakpoints.down("xs")]: {
-      marginRight: "0.5rem",
-    },
+  title: {
+    marginRight: "auto",
+  },
+  titleText: {
+    letterSpacing: 2,
+    cursor: "pointer",
+    // color: "#f2ebe0",
   },
 }));
 
-const NavBar = () => {
+export const NavBar = () => {
   const classes = useStyles();
-
+  const [open, setOpen] = useState("");
   return (
-    <div className={classes.nav}>
-      <Box
-        className={classes.mainBox}
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
-        <Box>
+    <AppBar position="sticky" color="default">
+      <Container className={classes.nav}>
+        <Toolbar disableGutters>
           <Link
-            activeClass="active"
+            className={classes.title}
+            activeClass="false"
             to="About"
             spy={true}
             smooth={true}
@@ -70,43 +70,82 @@ const NavBar = () => {
             <Tooltip title="Back to top" placement="right-end">
               <Typography
                 data-header="my-name"
-                color="#f2ebe0"
                 noWrap
                 component="div"
-                variant="h6"
-                sx={{
-                  letterSpacing: 2,
-                  cursor: "pointer",
-                  fontSize: "2rem",
-                  paddingLeft: "1rem",
-                  mr: 2,
-                  display: { md: "flex" },
-                }}
+                variant="h5"
+                className={classes.titleText}
               >
                 ORI ALTARACE
               </Typography>
             </Tooltip>
           </Link>
-        </Box>
-
-        <Box className={classes.buttonBox}>
-          {pages.map((page) => (
-            <Link
-              data-test={page}
-              activeClass="active"
-              to={page}
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-              key={page}
-            >
-              <div className={classes.navButtons}>{page.toUpperCase()}</div>
-            </Link>
+          <Hidden xsDown>
+            {navigationLinks.map((item) => (
+              <Link
+                data-test={item}
+                activeClass="active"
+                to={item}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                key={item}
+              >
+                <div className={classes.navButtons}>{item.toUpperCase()}</div>
+              </Link>
+            ))}
+          </Hidden>
+          <Hidden smUp>
+            <IconButton>
+              <MenuIcon
+                onClick={() => {
+                  setOpen(true);
+                }}
+              />
+            </IconButton>
+          </Hidden>
+        </Toolbar>
+      </Container>
+      <SwipeableDrawer
+        className={classes.nav}
+        anchor="right"
+        open={open}
+        onOpen={() => {
+          setOpen(true);
+        }}
+        onClose={() => {
+          setOpen(false);
+        }}
+      >
+        <div>
+          <IconButton>
+            <ChevronRightIcon
+              onClick={() => {
+                setOpen(false);
+              }}
+            />
+          </IconButton>
+        </div>
+        <Divider />
+        <List>
+          {navigationLinks.map((item) => (
+            <ListItem>
+              <Link
+                data-test={item}
+                activeClass="active"
+                to={item}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                key={item}
+              >
+                <div className={classes.navButtons}>{item.toUpperCase()}</div>
+              </Link>
+            </ListItem>
           ))}
-        </Box>
-      </Box>
-    </div>
+        </List>
+      </SwipeableDrawer>
+    </AppBar>
   );
 };
-export default NavBar;
