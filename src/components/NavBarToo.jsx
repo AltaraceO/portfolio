@@ -4,7 +4,6 @@ import {
   AppBar,
   Container,
   Toolbar,
-  //   Avatar,
   Tooltip,
   Typography,
   Hidden,
@@ -27,11 +26,11 @@ const useStyles = makeStyles((theme) => ({
   },
   nav: {
     "& a.active": {
-      color: "#1c1c1e",
+      // color: "#1c1c1e",
+      color: "#fff",
       backgroundColor: alpha("#b3b6bb", 1),
       borderRadius: "3px",
     },
-    // zIndex: "999",
   },
   navButtons: {
     padding: "0.5rem",
@@ -73,7 +72,7 @@ export const NavBarToo = () => {
                 data-header="my-name"
                 noWrap
                 component="div"
-                variant="h6"
+                variant="h5"
                 className={classes.titleText}
               >
                 ORI ALTARACE
