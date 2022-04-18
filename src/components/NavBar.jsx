@@ -118,12 +118,12 @@ export const NavBar = () => {
         }}
       >
         <div>
-          <IconButton>
-            <ChevronRightIcon
-              onClick={() => {
-                setOpen(false);
-              }}
-            />
+          <IconButton
+            onClick={() => {
+              setOpen(false);
+            }}
+          >
+            <ChevronRightIcon />
           </IconButton>
         </div>
         <Divider />
