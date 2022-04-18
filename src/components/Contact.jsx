@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     animation: `$fadeInRight 700ms ${theme.transitions.easing.easeInOut}`,
   },
   mainBox: {
-    height: "50vh",
+    height: "70vh",
     marginTop: "25%",
     margin: "auto",
     width: 600,
